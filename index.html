@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meshack Omagwa Mangaa | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark-teal: #0f4c5c;
+      --light-teal: #4ecdc4;
+      --peachy-cyan: #f4a7a1;
+      --white: #ffffff;
+      --soft-gray: #f7f9fa;
+      --text-dark: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--soft-gray);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: var(--white);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .photo img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--light-teal);
+      transition: transform 0.3s;
+    }
+
+    .photo img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      color: var(--dark-teal);
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
+
+    header p {
+      color: var(--text-dark);
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    header a {
+      display: inline-block;
+      margin-top: 8px;
+      background: var(--light-teal);
+      color: var(--white);
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    header a:hover {
+      background: var(--dark-teal);
+    }
+
+    section {
+      margin-bottom: 50px;
+      padding: 20px 0;
+    }
+
+    section:nth-child(even) {
+      background: var(--soft-gray);
+      border-radius: 12px;
+      padding: 30px 20px;
+    }
+
+    section h2 {
+      color: var(--dark-teal);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 6px solid var(--peachy-cyan);
+      padding-left: 15px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .item h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .item span {
+      color: var(--text-dark);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    a.inline-link {
+      color: var(--peachy-cyan);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--light-teal);
+    }
+
+    .hidden-note {
+      font-style: italic;
+      color: var(--text-dark);
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header a {
+        margin-top: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="photo">
+        <img src="photo-placeholder.jpg" alt="Profile Photo" />
+      </div>
+      <div>
+        <h1>Meshack Omagwa Mangaa</h1>
+        <p><strong>DAAD Scholar</strong> | Biostatistics & Data Science</p>
+        <p>Cotonou, Benin | Kenya</p>
+        <p class="hidden-note">Contact details (phone and email) are available upon formal request.</p>
+        <a href="https://www.linkedin.com/in/meshack-omagwa-270198204" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a DAAD Scholar and a driven Statistician with strong grounding in biostatistics, data science, and modern research methodologies. I work extensively with <strong>R, Python, and MATLAB</strong>, applying machine learning techniques including model training, testing, hyperparameter tuning, and handling class imbalance. I actively engage in scientific discourse through light talks on emerging methods and continuously seek to bridge rigorous statistical theory with real-world impact in health, development, and policy research.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Master of Science in Biostatistics</h3>
+        <span>Université d'Abomey-Calavi | 2024 – Present (Expected 2026)</span>
+      </div>
+      <div class="item">
+        <h3>Bachelor of Science in Mathematics & Applied Statistics</h3>
+        <span>University of Eastern Africa, Baraton | GPA: 3.61 / 4.00</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="item">
+        <h3>Kenya National Bureau of Statistics – Census Enumerator</h3>
+        <span>Aug 2019 – Sep 2019</span>
+        <ul>
+          <li>Enumerated households and identified Enumeration Area boundaries.</li>
+          <li>Collected accurate census data using digital tools.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Independent Electoral & Boundaries Commission – Polling Clerk</h3>
+        <ul>
+          <li>Managed voter flow and polling station operations.</li>
+          <li>Ensured adherence to electoral procedures.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Apollo Agriculture – Field Sales Agent</h3>
+        <span>Aug 2022 & Dec 2022 – Jan 2023</span>
+        <ul>
+          <li>Engaged farmers to assess challenges and recommend solutions.</li>
+          <li>Improved farmer value through data-informed advisory.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Juhudi Kilimo Ltd – Direct Sales Representative</h3>
+        <ul>
+          <li>Exceeded sales targets and developed sales proposals.</li>
+          <li>Prepared sales reports and identified market strategies.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Agip Capital Ltd & Ceres Tech Co. – Debt Collection Agent</h3>
+        <span>Feb 2023 – Aug 2024</span>
+        <ul>
+          <li>Managed debt recovery and negotiated repayment plans.</li>
+          <li>Resolved discrepancies and handled client inquiries.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research Publications & Aspirations</h2>
+      <div class="item">
+        <h3>Storage of Biometric Data in Matrix Form (Data Through the Lens of Security)</h3>
+        <span>Baraton Interdisciplinary Research Journal</span>
+        <p><a class="inline-link" href="https://journal.ueab.ac.ke/index.php/birj/article/view/10" target="_blank">View Publication</a></p>
+      </div>
+      <p>My research interests lie in biostatistics, data security, and applied statistical modeling for health and development. I aspire to contribute to impactful, policy-relevant research and pursue advanced scholarly work in statistical sciences.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills & Engagements</h2>
+      <p><strong>Programming & Analysis:</strong> R, Python (<a class="inline-link" href="https://thegraphcourses.org/aiw/" target="_blank">Graph & Network Courses</a>), MATLAB, Statistical Modeling, Data Visualization</p>
+      <p><strong>Machine Learning:</strong> Model training & testing, hyperparameter tuning, handling class imbalance, evaluation metrics</p>
+      <p><strong>Research & Methods:</strong> Cutting-edge methods in science & research (<a class="inline-link" href="https://www.digiface.org/" target="_blank">Digiface</a>)</p>
+      <p><strong>Academic Engagement:</strong> Conference posters, scientific light talks, collaborative research</p>
+      <p class="hidden-note">Referees are available upon formal request.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Meshack Omagwa Mangaa | Professional Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>
